@@ -1,0 +1,11 @@
+# Site settings
+title: Devop Ninja
+email: robert.fairburn@gmail.com
+description: > # this means to ignore newlines until "baseurl:"
+  Adventures in DevOps, high availability, and general randomness
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://devop.ninja" # the base hostname & protocol for your site
+github_username:  rfairburn
+
+# Build settings
+markdown: kramdown
