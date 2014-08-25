@@ -11,7 +11,7 @@ tagline: Randomly making things work with blood, sweat, and dirty hacks
 {{ post.excerpt }}
 
 <span><a href="{{ BASE_PATH }}{{ post.url }}">Read More</a></span> |
-<a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}"></a>
+<a href="{{ BASE_PATH }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.url }}">Comments</a>
 
   {% endfor %}
 
