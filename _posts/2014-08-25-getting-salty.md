@@ -3,7 +3,7 @@ layout: post
 title: "Getting Salty"
 description: "A little fun with Saltstack"
 category: "Configuration Management"
-tags: ["Saltstack"]
+tags: ["SaltStack"]
 ---
 {% include JB/setup %}
 I've had a chance recently to experiment a bit with [Saltstack](http://www.saltstack.com).  I hope to share my adventures over the next few posts.
