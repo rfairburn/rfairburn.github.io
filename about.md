@@ -14,7 +14,7 @@ First and foremost, a special thanks to my place of employment, <a href="http://
 
 Thanks to <a href="http://jekyllrb.com" target="blank">Jekyll</a> for providing an awesome framework to generate these pages with.
 
-Thanks to <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> for making this everything to implement.
+Thanks to <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a> and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a> for making everything easier to implement.
 
 Thanks to <a href="https://www.disqus.com" target="_blank">Disqus</a> for providing a comment framework so I didn't have to make my own.
 
