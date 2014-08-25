@@ -102,7 +102,9 @@
     </div id="footer">
 
     {% include JB/analytics %}
-
+    {% if page.url == '/index.html' %}
+      {% include JB/comments.count %}
+    {% endif %}
 
     <!-- Latest compiled and minified JavaScript, requires jQuery 1.x (2.x not supported in IE8) -->
     <!-- Placed at the end of the document so the pages load faster -->
