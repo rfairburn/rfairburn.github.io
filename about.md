@@ -6,7 +6,15 @@ group: navigation
 {% include JB/setup %}
 ## A little about me
 
-Coming Soon
+![Robert Fairburn](assets/images/robert.jpg) I grew up in software development, but I have been a Linux sysadmin for the last 15 years.  I have a passion for automation and scripting.  
+
+While development might not be my day job, I am familiar with the pains of development -- often brought on by admins like myself. It is my goal to make the lives of those I work with easier, be it developer or admin.  Hopefully you find the contents here useful, but mostly I just really enjoy sharing what I do. 
+
+Currently I am a black belt in Bash-Fu and Awk-Jistu, but only getting my feet wet in Salt.  I would consider myself a Master of Puppet, if for no better reason than a cheap Metallica reference.  Other skills include a variety of web serves including Nginx and Apache, database including MySQL and PostgreSQL, and cloud and virtualization including VMware, Openstack/Rackspace, and Amanzon AWS -- none of which have I been able to come up with cool Ninja names for yet.
+
+Family is important to me as you might imagine.  The newest little Devop Ninja is pictured with me to the left.  He and my wife definitely help get me through the inevitable stressful days in my line of work.
+
+<p style="clear: left"> </p>
 
 ## Special Thanks
 

@@ -89,3 +89,10 @@ h1, h2, h3, h4 {
   .icon > svg path {
     fill: #828282; }
 
+img[alt="Robert Fairburn"] {
+    float: left;
+    border: thin silver solid;
+    margin: 0.5em;
+    margin-right: 2em;
+    padding: 0.5em;
+}
