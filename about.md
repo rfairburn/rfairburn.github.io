@@ -29,4 +29,5 @@ Thanks to <a href="https://www.disqus.com" target="_blank">Disqus</a> for provid
 Thanks to <a href="https://github.com" target="_blank">GitHub</a> for providing hosting via <a href="https://pages.github.com" target="_blank">GitHub Pages</a>.
 
 Thanks to my wife Sarah for putting up with me through everything.
+
 Finally, thank you for spending some time to read my mad ramblings.  I hope you have found it beneficial in some way.
