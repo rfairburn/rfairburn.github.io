@@ -10,7 +10,7 @@ Ever forget the DNS name and the IP of the Amazon EC2 host you were wanting to l
 
 ### manage_ec2.py
 
-This little script was based upon an idea I had seen from a friend at work.  His solution was in bash, but relied upon Java to be able to handle the communicate with EC2.  I was hoping for something a little more elegant, unified, and fast.  Thus this script was born.  For your viewing pleasure (as always, latest on [Github](https://gist.github.com/rfairburn/15553a7eeb980302b84a)):
+This little script was based upon an idea I saw from a [coworker](https://github.com/seancdugan) at [C2FO](http://c2fo.com).  His solution was in bash, but relied upon Java to be able to handle the communicate with EC2.  I was hoping for something a little more elegant, unified, and fast.  Thus this script was born.  For your viewing pleasure (as always, latest on [Github](https://gist.github.com/rfairburn/15553a7eeb980302b84a)):
 
 {% highlight python %}
 
