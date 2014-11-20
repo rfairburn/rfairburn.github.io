@@ -84,9 +84,10 @@ So following all of these steps you should have an RPM with the following name r
 {% highlight console %}
 
 gmp6-6.0.0a-1.x86_64.rpm
-Python Crypto (PyCrypto)
 
 {% endhighlight %}
+
+### Python Crypto (PyCrypto)
 
 We'll install the rpm from above as the first step of building our new python crypto library and do all of the following to get ready to build a new python-crypto rpm:
 
