@@ -12,6 +12,8 @@ While development might not be my day job, I am familiar with the pains of devel
 
 Currently I am a black belt in Bash-Fu and Awk-Jitsu, but only getting my feet wet in Salt.  I would consider myself a Master of Puppet, if for no better reason than a cheap Metallica reference.  Other skills include a variety of web serves including Nginx and Apache, database including MySQL and PostgreSQL, and cloud and virtualization including VMware, Openstack/Rackspace, and Amazon AWS -- none of which have I been able to come up with cool Ninja names for yet.
 
+You will commonly see me on irc as SheetiS on [freenode](https://freenode.net/) in the channels #python and #salt among others.
+
 Family is important to me as you might imagine.  The newest little Devop Ninja is pictured with me to the left.  He and my wife definitely help get me through the inevitable stressful days in my line of work.
 
 <p style="clear: left"> </p>
