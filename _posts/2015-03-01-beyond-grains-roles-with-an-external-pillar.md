@@ -6,7 +6,7 @@ category: Configuration Management
 tags: ["SaltStack"]
 ---
 {% include JB/setup %}
-Managing system roles in grains has a number of limitations.  What other solutions are there?  This is a follow up to [The Grains Conundrum](/configuration%20management/2014/08/25/the-grains-conundrum/).
+In SaltStack, managing system roles in grains has a number of limitations.  What other solutions are there?  This is a follow up to [The Grains Conundrum](/configuration%20management/2014/08/25/the-grains-conundrum/).
 
 ### Background
 
