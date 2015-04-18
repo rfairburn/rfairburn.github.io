@@ -34,7 +34,7 @@ What about Spacewalk though?
 
 As I saw it the only chance of seeing Spacewalk work for me again was to build my own RPMs.  We are running Spacewalk 2.0 on our clients, which is not the most recent version, but was meeting all of our needs.  What I did was download and install the source RPMs for [Spacewalk 2.0](http://yum.spacewalkproject.org/2.0-client/RHEL/6/source/) into my build environment.
 
-One of the first thing I realized was a number of Python 2.6 dependencies that were not supplied by Amazon Linux and actually came from EPEL.  I would need to build those first.  I will not go into too much detail about the specifics, but have supplied the .spec files on [GitHub](https://github.com/rfairburn/amazon-linux-rpms) to allow anyone to build Spacewalk for Amazon Linux 2015.03.
+One of the first things I realized was a number of Python 2.6 dependencies that were not supplied by Amazon Linux and actually came from EPEL.  I would need to build those first.  I will not go into too much detail about the specifics, but have supplied the .spec files on [GitHub](https://github.com/rfairburn/amazon-linux-rpms) to allow anyone to build Spacewalk for Amazon Linux 2015.03.
 
 NOTE: I had a gotcha when I was building these packages.  It was likely due to my alternative being set to Python 2.6 instead of Python 2.7 to make SaltStack work, but I will share in any case.  I had to build with the command as follows:
 
