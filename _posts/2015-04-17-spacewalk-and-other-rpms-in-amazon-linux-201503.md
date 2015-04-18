@@ -6,7 +6,7 @@ category: Configuration Management
 tags: ['Spacewalk', 'Amazon Linux', 'Python', 'RPMs', 'SaltStack']
 ---
 {% include JB/setup %}
-Users of Amazon Linux 2015.03 offering, may have noticed that Amazon updated the system Python version to 2.7.  While they still provide fairly decent support for Python 2.6, this change caused several unforeseen headaches when deploying 2015.03 at work -- particularly surrounding [Spacewalk](http://spacewalk.redhat.com).  Read on to see how I addressed these issues...
+Users of Amazon Linux 2015.03 may have noticed that Amazon updated the system Python version to 2.7.  While they still provide fairly decent support for Python 2.6, this change caused several unforeseen headaches when deploying 2015.03 at work -- particularly surrounding [Spacewalk](http://spacewalk.redhat.com).  Read on to see how I addressed these issues...
 
 ### The Good
 
