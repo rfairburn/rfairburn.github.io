@@ -12,7 +12,7 @@ Users of Amazon Linux 2015.03 may have noticed that Amazon updated the system Py
 
 In my previous article [SaltStack: GMP and PyCrypto on Amazon Linux](/configuration%20management/2014/11/20/saltstack-gmp-and-pycrypto-on-amazon-linux/) I outlined how I have utilized custom RPMs in the past to get around shortcomings of supplied system packages.
 
-What I did not explain in that article is that the system-supplied paramiko python package also used deprecated features in pycrypto causing messages similar to the ones described in that article.  Amazon Linux 2015.03 supplies updated paramiko packages for both Python 2.6 and Python 2.7, so I no longer need to build my own.  That is excellent.  Additionally they have alternatives in place so that Python 2.6 can still be default for most things if-needed.
+What I did not explain in that article is that the system-supplied paramiko python package also used deprecated features in pycrypto causing messages similar to the ones described in that article.  Amazon Linux 2015.03 supplies updated paramiko packages for both Python 2.6 and Python 2.7, so I no longer need to build my own.  This is excellent.  Additionally they have alternatives in place so that Python 2.6 can still be default for most things if needed.
 
 I have also learned a bit about packaging since that article and have some better dependency integration and even found some things that were broken with the implementation as documented in that article.  I will share those updates below as well.
 
