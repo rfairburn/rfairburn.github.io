@@ -6,13 +6,13 @@ category: Configuration Management
 tags: ['Spacewalk', 'Amazon Linux', 'Python', 'RPMs', 'SaltStack']
 ---
 {% include JB/setup %}
-If you use Amazon Linux and have looked at the latest 2015.03 offering, you may have noticed that Amazon updated the system Python version to 2.7.  While they still provide fairly decent support for Python 2.6, this change caused several unforeseen headaches when deploying 2015.03 at work -- particularly surrounding [Spacewalk](http://spacewalk.redhat.com).  Read on to see how I addressed these issues...
+Users of Amazon Linux 2015.03 offering, may have noticed that Amazon updated the system Python version to 2.7.  While they still provide fairly decent support for Python 2.6, this change caused several unforeseen headaches when deploying 2015.03 at work -- particularly surrounding [Spacewalk](http://spacewalk.redhat.com).  Read on to see how I addressed these issues...
 
 ### The Good
 
-Those of you who have read my article [SaltStack: GMP and PyCrypto on Amazon Linux](/configuration%20management/2014/11/20/saltstack-gmp-and-pycrypto-on-amazon-linux/) should already be aware that I have utilized custom RPMs in the past to get around shortcomings of the supplied system packages.
+In my previous article [SaltStack: GMP and PyCrypto on Amazon Linux](/configuration%20management/2014/11/20/saltstack-gmp-and-pycrypto-on-amazon-linux/) I outlined how I have utilized custom RPMs in the past to get around shortcomings of supplied system packages.
 
-What I did not explain in that article is that the system-supplied paramiko python package also used deprecated features in pycrypto causing messages similar to what you see in that article.  Amazon Linux 2015.03 supplies updated paramiko packages for both Python 2.6 and Python 2.7, so I no longer need to build my own.  That is excellent.  Additionally they have alternatives in place so that you can still default to Python 2.6 for most things if-needed.
+What I did not explain in that article is that the system-supplied paramiko python package also used deprecated features in pycrypto causing messages similar to the ones described in that article.  Amazon Linux 2015.03 supplies updated paramiko packages for both Python 2.6 and Python 2.7, so I no longer need to build my own.  That is excellent.  Additionally they have alternatives in place so that Python 2.6 can still be default for most things if-needed.
 
 I have also learned a bit about packaging since that article and have some better dependency integration and even found some things that were broken with the implementation as documented in that article.  I will share those updates below as well.
 
@@ -34,7 +34,7 @@ What about Spacewalk though?
 
 As I saw it the only chance of seeing Spacewalk work for me again was to build my own RPMs.  We are running Spacewalk 2.0 on our clients, which is not the most recent version, but was meeting all of our needs.  What I did was downloaded and install the source RPMs for [Spacewalk 2.0](http://yum.spacewalkproject.org/2.0-client/RHEL/6/source/) and installed the sources into my build environment.
 
-One of the first thing I realized was a number of Python 2.6 dependencies that were not supplied by Amazon Linux and actually came from EPEL.  I would need to build those first.  I will not go into too much detail about the specifics, but have supplied the .spec files on [GitHub](https://github.com/rfairburn/amazon-linux-rpms) to allow you to build your own.
+One of the first thing I realized was a number of Python 2.6 dependencies that were not supplied by Amazon Linux and actually came from EPEL.  I would need to build those first.  I will not go into too much detail about the specifics, but have supplied the .spec files on [GitHub](https://github.com/rfairburn/amazon-linux-rpms) to allow anyone to build Spacewalk for Amazon Linux 2015.03.
 
 NOTE: I had a gotcha when I was building these packages.  It was likely due to my alternative being set to Python 2.6 instead of Python 2.7 to make SaltStack work, but I will share in any case.  I had to build with the command as follows:
 
@@ -51,7 +51,7 @@ rpmbuild -ba --define '__python /usr/bin/python27' <specfile>
 * [python27-gudev](https://github.com/rfairburn/amazon-linux-rpms/blob/master/rpmbuild/SPECS/python27-gudev.spec)
 * [python27-hwdata](https://github.com/rfairburn/amazon-linux-rpms/blob/master/rpmbuild/SPECS/python27-hwdata.spec)
 
-Any patches needed by these are also supplied.  You will need to download the reference sources yourself, but the locations should be included in the specfile or at worst obtained at the [EPEL6 SRPM Repo](https://dl.fedoraproject.org/pub/epel/6/SRPMS/).
+Any patches needed by these are also supplied.  Reference sources packages still need to be downloaded, but the locations should be included in the specfile or at worst obtained at the [EPEL6 SRPM Repo](https://dl.fedoraproject.org/pub/epel/6/SRPMS/).
 
 #### Spacewalk
 
