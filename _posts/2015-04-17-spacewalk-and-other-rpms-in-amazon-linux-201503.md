@@ -51,7 +51,7 @@ rpmbuild -ba --define '__python /usr/bin/python27' <specfile>
 * [python27-gudev](https://github.com/rfairburn/amazon-linux-rpms/blob/master/rpmbuild/SPECS/python27-gudev.spec)
 * [python27-hwdata](https://github.com/rfairburn/amazon-linux-rpms/blob/master/rpmbuild/SPECS/python27-hwdata.spec)
 
-Any patches needed by these are also supplied.  Reference sources packages still need to be downloaded, but the locations should be included in the specfile or at worst obtained at the [EPEL6 SRPM Repo](https://dl.fedoraproject.org/pub/epel/6/SRPMS/).
+Any patches needed by these are also supplied.  Reference sources still need to be downloaded, but the locations should be included in the specfile or at worst obtained at the [EPEL6 SRPM Repo](https://dl.fedoraproject.org/pub/epel/6/SRPMS/).
 
 #### Spacewalk
 
